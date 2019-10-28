@@ -11,6 +11,9 @@ class Sufferers < Sinatra::Base
 	private
 		
 		def sufferer
+			100.times do
+				%w[anela danijel dejan lucija tomislav vladimir].sample
+			end
 			%w[anela danijel dejan lucija tomislav vladimir].sample
 		end
 end
