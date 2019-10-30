@@ -1,4 +1,5 @@
 class Sufferers < Sinatra::Base
+	NAMES = %w[Anela Danijel Dejan Lucija Tomislav Vladimir]
   get "/" do
 		"Odabrani jadničak: #{sufferer}"
 	end
@@ -12,8 +13,8 @@ class Sufferers < Sinatra::Base
 		
 		def sufferer
 			100.times do
-				%w[anela danijel dejan lucija tomislav vladimir].sample
+				NAMES.sample
 			end
-			%w[anela danijel dejan lucija tomislav vladimir].sample
+			NAMES.sample
 		end
 end
