@@ -1,5 +1,5 @@
 class Sufferers < Sinatra::Base
-	NAMES = %w[Anela Danijel Dejan Lucija Tomislav Vladimir]
+	NAMES = %w[Anela Danijel Dejan Lucija Tomislav Filip]
   get "/" do
 		"Odabrani jadničak: #{sufferer}"
 	end
